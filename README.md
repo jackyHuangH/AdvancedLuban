@@ -2,7 +2,7 @@
 基于Luban压缩算法，可限制文件宽、高和最大size，原项目作者已不维护，复制到Github仓库方便集成，原项目：https://github.com/shaohui10086/AdvancedLuban
 
 ## 引入App build.gradle
-	implementation 'me.shaohui.advancedluban:library:1.3.5'
+	implementation 'com.github.jackyHuangH:AdvancedLuban:1.0.0'
 ## 使用
 
 ### `Listener`方式
