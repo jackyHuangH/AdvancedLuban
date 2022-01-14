@@ -1,43 +1,9 @@
 # AdvancedLuban
-<<<<<<< HEAD
-基于Luban压缩算法，可限制文件宽、高和最大size，参考：https://github.com/shaohui10086/AdvancedLuban
-=======
-[![build](https://img.shields.io/badge/build-1.3.5-brightgreen.svg?maxAge=2592000)](https://bintray.com/shaohui/maven/AdvancedLuban)
-[![license](https://img.shields.io/badge/license-Apache%202-blue.svg?maxAge=2592000)](https://github.com/shaohui10086/AdvancedLuban/blob/master/LICENSE)
+基于Luban压缩算法，可限制文件宽、高和最大size，原项目：https://github.com/shaohui10086/AdvancedLuban
 
-
-[中文版](/README_ZH.md)
-
-![sketch](/image/sketch_map.png)
-
-
-`AdvancedLuban` —— Is a convenient simple `Android` image compression tool library.Provides multiple compression strategies.Different calling methods，Custom compression,Multi-Image synchronous compression and so on,Focus on a better picture compression experience
-
-Image Count | Origin Total size | Compressed Total size | Time Cost
---- | --- | --- | ---
-1 | 4.3Mb | 85Kb | 0.23s
-4 | 14.22Mb | 364Kb | 1.38s
-9 | 36.23Mb | 745Kb | 4.43s
-
-
-## Import
-
-Maven
-
-    <dependency>
-      <groupId>me.shaohui.advancedluban</groupId>
-      <artifactId>library</artifactId>
-      <version>1.3.5</version>
-      <type>pom</type>
-    </dependency>
-
-    
-or Gradle
-
-	compile 'me.shaohui.advancedluban:library:1.3.5'
-
-## Usage
-
+## 引入App build.gradle
+	implementation 'me.shaohui.advancedluban:library:1.3.5'
+## 使用
 
 ### `Listener` mode
 
@@ -98,50 +64,7 @@ or the `RxJava` way to use:
 
 If you use a multi-map compression, we must take into account the risk of OOM, recommend you use CUSTOM_GEAR, and then customize the compression index, to a large extent reduce the risk of OOM, the current test did not find the problem of OOM
 
-## ChangeLog
-
-#### 1.3.5
-- Add custom compression cache directory
-
-#### 1.3.4
-- update RxJava to RxJava2
-
-#### 1.3.3
-- Set the default observed in the main thread
-
-#### 1.3.2
-- Optimize memory usage
-
-#### 1.3.1
-- Added custom compression format
-- COMO_GEAR used to solve the problem of OOM
-- Refactored most of the code
-- To support WebP, the minimum supported version is increased to 14
-
-## Issue
-    
-You can according to your needs to choose a different compression mode and call mode ! ｂ（￣▽￣）ｄ ！Finally, I welcome the Issue
-
 ## Thanks For
 - https://github.com/Curzibn/Luban
 - https://github.com/ReactiveX/Rxjava
 - https://github.com/ReactiveX/RxAndroid
-
-## License
-
-    Copyright 2016 shaohui10086
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-	
- 
->>>>>>> ec66fc9 (first commit)
